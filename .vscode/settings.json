@@ -1,0 +1,6 @@
+{
+    "scm.alwaysShowRepositories": true,
+    "geminiAssistant.apiKey": "AQ.Ab8RN6JDJeaTzgtQ8OsDQph2Jq8r9YTLhW2iBHYwi0_mK97glA",
+    "github.copilot.completions.chat.enabled": true,
+    "github.copilot.chat.codesearch.enabled": true
+}
