@@ -33,7 +33,11 @@ const CollaborationsPage = () => {
 
   return (
     <>
-      <Helmet><title>Collaborations | Mimo's Collective</title></Helmet>
+      <Helmet>
+        <title>Collaborations | Mimo's Collective</title>
+        <meta name="description" content="Discover collaborations, creative initiatives, and personal projects curated by Mimo's Collective." />
+        <link rel="canonical" href="https://www.movsummirzazada.com/mimo-collective/collaborations" />
+      </Helmet>
       <div className="min-h-screen bg-[#0A1612] text-[#EBE8E3] pt-28 pb-20 px-4">
         <GradientBackground />
         <div className="max-w-7xl mx-auto">

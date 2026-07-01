@@ -50,7 +50,7 @@ const Header = ({ onCartClick }) => {
     { name: 'Featured', path: '/mimo-collective/legal-complaint-service' },
     { name: 'Shop', path: '/mimo-collective/shop' },
     { name: 'Offers', path: '/mimo-collective/offers' },
-    { name: 'Brands', path: '/brands' },
+    { name: 'Brands', path: '/mimo-collective/brands' },
   ];
 
   const activeStyle = 'text-[#E0A995] border-b-2 border-[#E0A995]';

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Layout from '@/components/Layout';
 import HomePage from '@/pages/HomePage';
@@ -66,6 +66,10 @@ function App() {
         <CartProvider>
           <div className="min-h-screen bg-[#0A1612] text-[#EBE8E3] overflow-x-hidden selection:bg-[#E0A995] selection:text-[#0A1612]">
             <Helmet>
+              <title>Movsum Mirzazada - Official Website</title>
+              <meta name="description" content="Official website of Movsum Mirzazada, award-winning Azerbaijani actor, creative professional, and founder of Mimo's Collective." />
+              <link rel="canonical" href="https://www.movsummirzazada.com/" />
+              <meta name="robots" content="index,follow" />
               {/* Task 1 & 4: Aggressive Cache-Control headers for Google Search Console testing */}
               <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
               <meta httpEquiv="Pragma" content="no-cache" />
@@ -120,6 +124,7 @@ function App() {
                    <AdminPage /> 
                 </ProtectedRoute>
                } />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </div>
         </CartProvider>

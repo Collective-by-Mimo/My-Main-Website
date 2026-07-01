@@ -32,7 +32,11 @@ const PartnersServicesPage = () => {
 
   return (
     <>
-      <Helmet><title>Partner Services | Mimo's Collective</title></Helmet>
+      <Helmet>
+        <title>Partner Services | Mimo's Collective</title>
+        <meta name="description" content="Explore partner services and professional collaborations available through Mimo's Collective." />
+        <link rel="canonical" href="https://www.movsummirzazada.com/mimo-collective/partners-services" />
+      </Helmet>
       <div className="min-h-screen bg-[#0A1612] text-[#EBE8E3] pt-28 pb-20 px-4">
         <GradientBackground />
         <div className="max-w-7xl mx-auto">
