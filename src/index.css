@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-forest-dark: #0A1612;
+  --color-forest-medium: #13251E;
+  --color-forest-light: #1D362C;
+  --color-cream: #EBE8E3;
+  --color-cream-muted: #A8B3AF;
+  --color-rose-gold: #E0A995;
+  --color-rose-gold-dim: #9E7465;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #EBE8E3;
+  background-color: #0A1612;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Global Responsive Containers */
+section, header, footer, main {
+  width: 100%;
+  max-width: 100%;
+}
+
+.responsive-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .responsive-container {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-container {
+    padding: 0 32px;
+  }
+}
+
+.glass-panel {
+  @apply bg-[#13251E]/40 backdrop-blur-md border border-[#E0A995]/20 shadow-xl;
+}
+
+.glass-card {
+  @apply bg-[#1D362C]/30 backdrop-blur-sm border border-[#E0A995]/10 hover:border-[#E0A995]/40 transition-all duration-300;
+}
+
+.text-gradient-gold {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#E0A995] to-[#D4AF37];
+}
