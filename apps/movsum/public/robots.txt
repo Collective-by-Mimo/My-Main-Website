@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://movsummirzazada.com/sitemap.xml

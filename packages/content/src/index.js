@@ -1,2 +1,3 @@
-// Shared brand content: bio, tagline, socials, JSON-LD builders.
-export {};
+export * from "./bio.js";
+export * from "./brand.js";
+export * from "./jsonld.js";

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/collective",            "destination": "https://mimoscollective.com",            "permanent": true },
+    { "source": "/services",              "destination": "https://mimoscollective.com",            "permanent": true },
+    { "source": "/mimo-collective",       "destination": "https://mimoscollective.com",            "permanent": true },
+    { "source": "/mimo-collective/:path*", "destination": "https://mimoscollective.com/:path*",     "permanent": true }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}

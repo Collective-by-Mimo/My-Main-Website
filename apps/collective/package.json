@@ -1,0 +1,25 @@
+{
+  "name": "@mimo/collective",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host :: --port 3002",
+    "build": "vite build",
+    "preview": "vite preview --host :: --port 3002"
+  },
+  "dependencies": {
+    "@mimo/content": "*",
+    "@mimo/supabase": "*",
+    "@mimo/ui": "*",
+    "@vercel/analytics": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.2.0",
+    "vite": "^7.3.1"
+  }
+}
